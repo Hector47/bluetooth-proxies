@@ -11,7 +11,7 @@ esphome:
 esp32:
   board: esp32doit-devkit-v1
   framework:
-    type: arduino
+    type: esp-idf
 
 ethernet:
   type: LAN8720
@@ -35,6 +35,7 @@ esp32_ble_tracker:
     active: true
 
 bluetooth_proxy:
+  active: true
 
 button:
 - platform: safe_mode
